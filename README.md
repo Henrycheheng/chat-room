@@ -71,3 +71,31 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+# 1 nest init
+
+> 1.通过`NestFactory`创建 appModule
+
+```bash
+  nest start --watch 监视模式
+```
+
+> 2 app.contorller 中可以给 @GET()装饰器 中传入路由
+
+## 2 安装 Docker,数据库虚拟化
+
+```bash
+docker search mongo
+docker run -itd --name mongo -p 27017:27017 -v ~/data/mongoData:/data/db mongo -auth
+```
+- itd 命令行的形式交互并且以守卫进程的方式运行它
+- -p 端口
+- 1212:27017 映射到本机的27017 端口
+- -v 数据挂载
+- ~/data/mongoData: 用户文件夹下的data目录下的mongoData 来存放容器/数据库中的容器
+- :/data/db 数据保存在 根目录下的data db
+- 搭载镜像 mongo
+- auth 权限
+
+## 3
+
